@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 // Required for ImageFilter , import 'dart:ui';
+import 'dart:ui';
+
 import 'package:app_bar/widgets/custom.container.dart';
 import 'package:app_bar/widgets/custom.drawer.dart';
 import 'package:app_bar/widgets/floating.appbar.dart';
@@ -50,11 +52,15 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      extendBodyBehindAppBar: true,
       drawer: size.width < 600 ? CustomDrawer() : null,
       appBar: size.width < 600
           ? AppBar(
+            flexibleSpace: ClipRect(child: BackdropFilter(filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10)),),
+            elevation: 0,
+            backgroundColor: Colors.white.withAlpha(200),
               // Display AppBar only in mobile view
-              title: Text("AppBar"),
+              title: Text("AppBar", style: TextStyle(color: Colors.black87),),
               actions: [
                 IconButton(
                   icon: Icon(Icons.wb_sunny_rounded),
