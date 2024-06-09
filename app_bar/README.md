@@ -1,20 +1,62 @@
-<<<<<<< HEAD
-# Flutter_UI_components
-=======
-# app_bar
+# Floating transparent ApBar
 
-A new Flutter project.
+This is a floating AppBar/NavBar made with flutter, with a blur effect.
 
-## Getting Started
+The app-baar and the background can be customized accordingly to the UI design as needed, you can make a custom screen/widget and replace the existing one easily.
 
-This project is a starting point for a Flutter application.
+## How to run the app
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+add required dependancies to pubspec.yaml
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> 29d59af (initail commit, appbar)
+```
+flutter pub get
+```
+
+in the root directory, run the code
+
+```
+flutter run
+```
+
+
+to use the device preview, replace the main() code with the below code
+```
+void main()  async {
+  await dotenv.load(fileName : "assets/.env");
+  runApp(
+  DevicePreview(
+    // enabled: !kReleaseMode,
+    builder: (context) => MyApp(), // Wrap your app
+  ),
+);}
+```
+
+
+# Screenshot of flutter app
+
+<div style="display: flex; justify-content: space-between; margin : 16px; padding : 16px">
+    <img src="assets\screenshots\desktopDarkMode.png" alt="Home Screen" style="width: 300px; height: 300px; margin: 6px" />
+    <img src="assets\screenshots\desktopDarkMode2.png" alt="Home Screen" style="width: 300px; height: 300px; margin: 6px" />
+    <img src="assets\screenshots\desktopLightMode.png" alt="Home Screen" style="width: 300px; height: 300px; margin: 6px" />
+    <img src="assets\screenshots\phoneDarkMode.png" alt="Home Screen" style="width: 300px; height: 450px; margin: 6px" />
+    <img src="assets\screenshots\phoneLightMode.png" alt="Home Screen" style="width: 300px; height: 450px; margin: 6px" />
+</div>
+
+
+
+
+# TODO
+
+
+- [X] Make a floating app-bar with blur effect
+
+- [ ] Make it responsive 
+
+- [ ] Make a masonry/staggered view 
+
+
+
+
+ 
+Flutter :blue_heart:
