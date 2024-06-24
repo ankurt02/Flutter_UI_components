@@ -39,10 +39,14 @@ void main()  async {
     <img src="assets/screenshots/desktopDarkMode.png" alt="Home Screen" style="width: 500px; height: 300px; margin: 6px;" />
     <img src="assets/screenshots/desktopDarkMode2.png" alt="Home Screen" style="width: 500px; height: 300px; margin: 6px;" />
     <img src="assets/screenshots/desktopLightMode.png" alt="Home Screen" style="width: 500px; height: 300px; margin: 6px;" />
+    <br>
+    <img src="assets/screenshots/staggeredViewLightThemeLaptop.png" alt="Home Screen" style="width: 500px; height: 350px; margin: 6px;" />
+    <img src="assets/screenshots/staggeredViewDarkThemeLaptop.png.png" alt="Home Screen" style="width: 500px; height: 350px; margin: 6px;" />
 </div>
 <div style="display: flex; justify-content: flex-start; margin: 6px;">
-    <img src="assets/screenshots/phoneDarkMode.png" alt="Home Screen" style="width: 300px; height: 550px; margin: 6px;" />
     <img src="assets/screenshots/phoneLightMode.png" alt="Home Screen" style="width: 300px; height: 550px; margin: 6px;" />
+    <img src="assets/screenshots/phoneDarkMode.png" alt="Home Screen" style="width: 300px; height: 550px; margin: 6px;" />
+    <img src="assets/screenshots/screenshotImagesPhone.png" alt="Home Screen" style="width: 300px; height: 550px; margin: 6px;" />
 </div>
 
 

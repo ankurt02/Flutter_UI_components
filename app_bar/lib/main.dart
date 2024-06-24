@@ -58,11 +58,17 @@ class _HomeState extends State<Home> {
       drawer: size.width < 600 ? CustomDrawer() : null,
       appBar: size.width < 600
           ? AppBar(
-            flexibleSpace: ClipRect(child: BackdropFilter(filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10)),),
-            elevation: 0,
-            backgroundColor: Colors.white.withAlpha(200),
+              flexibleSpace: ClipRect(
+                child: BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10)),
+              ),
+              elevation: 0,
+              backgroundColor: Colors.white.withAlpha(200),
               // Display AppBar only in mobile view
-              title: Text("AppBar", style: TextStyle(color: Colors.black87),),
+              title: Text(
+                "AppBar",
+                style: TextStyle(color: Colors.black87),
+              ),
               actions: [
                 IconButton(
                   icon: Icon(Icons.wb_sunny_rounded),
@@ -80,8 +86,42 @@ class _HomeState extends State<Home> {
             color: Theme.of(context).scaffoldBackgroundColor,
             height: size.height,
             width: size.width,
-            child: Padding(
-              padding: const EdgeInsets.only(top :50.0),
+            child: 
+            
+            
+            // To have the colored container background, uncomment the below code, and remove the code below it
+            // SingleChildScrollView(
+            //   padding: size.width > 600
+            //       ? EdgeInsets.only(top: 80)
+            //       : EdgeInsets.all(8),
+            //   child: Column(
+            //     children: [
+            //       CustomContainer(
+            //         color: Colors.pink,
+            //       ),
+            //       CustomContainer(
+            //         color: Colors.amber,
+            //       ),
+            //       CustomContainer(
+            //         color: Colors.blue,
+            //       ),
+            //       CustomContainer(
+            //         color: Colors.orange,
+            //       ),
+            //       CustomContainer(
+            //         color: Colors.lime,
+            //       ),
+            //     ],
+            //   ),
+            // ),
+
+
+
+            // to use the colored container code, comment out the below code/ padding widget, and un-comment the above widget(SingleChildScrollView)
+            Padding(
+              padding: size.width > 600
+                  ? EdgeInsets.only(top: 50.0)
+                  : EdgeInsets.all(2),
               child: StaggeredView(),
             ),
           ),
