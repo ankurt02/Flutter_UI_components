@@ -11,6 +11,8 @@ import 'package:app_bar/theme/theme_notifier.dart';
 import 'package:provider/provider.dart';
 import 'package:device_preview/device_preview.dart';
 
+import 'widgets/staggered.screen.dart';
+
 // void main() => runApp(MyApp());
 
 void main() => runApp(
@@ -78,27 +80,9 @@ class _HomeState extends State<Home> {
             color: Theme.of(context).scaffoldBackgroundColor,
             height: size.height,
             width: size.width,
-            child: SingleChildScrollView(
-              padding: size.width > 600 ? EdgeInsets.only(top: 80) : EdgeInsets.all(8),
-              child: Column(
-                children: [
-                  CustomContainer(
-                    color: Colors.pink,
-                  ),
-                  CustomContainer(
-                    color: Colors.amber,
-                  ),
-                  CustomContainer(
-                    color: Colors.blue,
-                  ),
-                  CustomContainer(
-                    color: Colors.orange,
-                  ),
-                  CustomContainer(
-                    color: Colors.lime,
-                  ),
-                ],
-              ),
+            child: Padding(
+              padding: const EdgeInsets.only(top :50.0),
+              child: StaggeredView(),
             ),
           ),
           if (size.width >= 600)
