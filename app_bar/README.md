@@ -57,9 +57,9 @@ void main()  async {
 
 - [X] Make a floating app-bar with blur effect
 
-- [ ] Make it responsive 
+- [X] Make it responsive 
 
-- [ ] Make a masonry/staggered view 
+- [X] Make a masonry/staggered view 
 
 
 
