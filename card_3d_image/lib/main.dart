@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// MULTI-CARD SLIDER
+
 class ArchetypeDeck extends StatelessWidget {
   const ArchetypeDeck({super.key});
 
@@ -27,7 +27,7 @@ class ArchetypeDeck extends StatelessWidget {
       TiltArchetypeCard(
         data: ArchetypeCardData(
           title: "The Engineer",
-          subtitle: "19.1% share this archetype",
+          subtitle: "Lorem ipsum dolor sit amet",
           year: "2025",
           imagePath:
               "assets/images/laptop3Dblack-removebg-preview.png", // use image with no background
@@ -36,7 +36,7 @@ class ArchetypeDeck extends StatelessWidget {
       TiltArchetypeCard(
         data: ArchetypeCardData(
           title: "The Engineer",
-          subtitle: "19.1% share this archetype",
+          subtitle: "Lorem ipsum dolor sit amet",
           year: "2025",
           imagePath:
               "assets/images/laptop3Dblack-removebg-preview.png", // use image with no background
@@ -45,7 +45,7 @@ class ArchetypeDeck extends StatelessWidget {
     ];
 
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.black87,
       body: Center(child: Wrap(spacing: 40, runSpacing: 40, children: cards)),
     );
   }

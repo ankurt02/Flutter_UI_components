@@ -80,8 +80,8 @@ class _TiltArchetypeCardState extends State<TiltArchetypeCard>
     final dy = (p.dy - size.height / 2) / (size.height / 2);
 
     setState(() {
-      tiltY = dx * 0.5;
-      tiltX = -dy * 0.5;
+      tiltY = dx * 0.2;
+      tiltX = -dy * 0.2;
 
       parallaxX = dx * 20;
       parallaxY = dy * 20;
@@ -260,7 +260,7 @@ class LogoPatternPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    const icon = Icons.settings; // use your symbol
+    const icon = Icons.settings; 
     final tp = TextPainter(textDirection: TextDirection.ltr);
 
     for (double x = -50; x < size.width + 50; x += 90) {
