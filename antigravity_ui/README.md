@@ -2,7 +2,10 @@
 
 A high-performance, interactive particle system for Flutter. This project is a technical recreation of the **Google Antigravity** "Jellyfish" effect, featuring a fluid vector field that tracks the user's mouse with organic, physics-based smoothing.
 
-https://github.com/user-attachments/assets/7fee5353-895c-404d-adb8-c1c565eb12e5
+
+
+https://github.com/user-attachments/assets/4c4aff43-0abd-447b-971a-0dcead1cde1f
+
 
 ## ✨ Features
 
