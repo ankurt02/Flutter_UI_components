@@ -3,11 +3,8 @@
 A high-performance mathematical particle system implemented in Flutter using `CustomPaint`. This project is a functional recreation of the iconic "Jellyfish" particle animation found on the **Google Antigravity** website, simulating a fluid, organic vector field.
 
 
-<p align="center">
-  &nbsp;&nbsp;
-  <img src="assets/screenshots/image.png" width="85%" />
-  &nbsp;&nbsp;
-</p>
+<img width="1916" height="980" alt="image" src="https://github.com/user-attachments/assets/56ae5b66-8650-4a17-888e-949aa801ade0" />
+
 
 ---
 
