@@ -1,16 +1,10 @@
-# card_3d_perplixity
+<p align="center">
+  <img alt="Screenshot 1" src="https://github.com/user-attachments/assets/85a53058-c34f-43e6-a552-cb59b5a31099" width="45%" />
+  &nbsp; <img alt="Screenshot 2" src="https://github.com/user-attachments/assets/19d2d20e-0522-4a33-8cac-7f1fb5451680" width="45%" />
+</p>
 
-A new Flutter project.
+---
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+https://github.com/user-attachments/assets/6c1fb7ec-45c1-40a9-b8b6-46e59ba46dda
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
