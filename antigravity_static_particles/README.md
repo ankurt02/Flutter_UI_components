@@ -45,9 +45,3 @@ The design follows a clean, modern aesthetic:
 * **Color Palette:** Focused on **Google Blue** (`#4285F4`) against a stark white background.
 
 ---
-
-
-https://github.com/user-attachments/assets/ad719621-a405-427d-b069-feffc28d8909
-
-
-
