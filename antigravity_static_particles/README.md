@@ -1,16 +1,56 @@
-# antigravity_static_particles
+# 🫧 Flutter Antigravity Jellyfish Particles
 
-A new Flutter project.
+A high-performance mathematical particle system implemented in Flutter using `CustomPaint`. This project is a functional recreation of the iconic "Jellyfish" particle animation found on the **Google Antigravity** website, simulating a fluid, organic vector field.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+<p align="center">
+  &nbsp;&nbsp;
+  <img src="assets/screenshots/image.png" width="85%" />
+  &nbsp;&nbsp;
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ✨ Key Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* **Fluid Vector Motion:** Particles utilize dual sine and cosine waves to create a non-repeating, organic "floating" movement.
+* **Dynamic Contraction Zones:** Implements four distinct behavior zones (Center, Peak, Contraction, and Outer) that dynamically adjust scale, length, and opacity based on Euclidean distance.
+* **Procedural Grid Generation:** Uses a randomized jittered grid to ensure particles are distributed naturally, avoiding a rigid lattice appearance.
+* **High-Frequency Ticker:** Powered by a `Ticker` for $60+$ FPS performance, ensuring smooth rendering for hundreds of simultaneous particles.
+* **Swim Cycle Logic:** Simulates a "swimming" motion where particles at the field's edge experience an inward pull toward the center.
+
+
+
+## 🚀 Getting Started
+
+### Project Structure
+* **`AntigravityJellyfishPage`**: The main UI layer containing the Google-style minimalist typography.
+* **`JellyfishField`**: The stateful container that initializes the grid and manages the animation `Ticker`.
+* **`JellyfishPainter`**: The core engine that performs the math and draws to the `Canvas`.
+
+### Configuration
+Adjust the field's behavior in `_JellyfishFieldState`:
+
+| Parameter | Default Value | Description |
+| :--- | :--- | :--- |
+| `_gridSpacing` | `36.0` | Controls particle density. |
+| `_jitterAmount` | `12.0` | Controls the "randomness" of the initial positions. |
+| `outerRadius` | `360.0` | The boundary of the jellyfish effect. |
+| `baseLength` | `5.0` | The default length of each particle stroke. |
+
+---
+
+## 🎨 UI/UX Design
+
+The design follows a clean, modern aesthetic:
+* **Typography:** Bold headers with negative letter spacing (`-2.0`) for a premium look.
+* **Interactive Button:** A sleek, pill-shaped "Download for Windows" button using high-contrast black and white.
+* **Color Palette:** Focused on **Google Blue** (`#4285F4`) against a stark white background.
+
+---
+
+
+https://github.com/user-attachments/assets/ad719621-a405-427d-b069-feffc28d8909
+
+
+
